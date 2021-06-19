@@ -40,5 +40,34 @@ Restart the tftpd-hpa Service
 
 [__External Links:__](https://help.ubuntu.com/community/TFTP)
 
+## DNS
 
+### [dnsmasq](https://thekelleys.org.uk/dnsmasq/doc.html)
 
+Since Ubuntu 18.04 ships with systemd-resolved by default (and it's bound to port 53), you'll want to perform a few extra steps:
+
+First,  disable and stop systemd-resolved:
+
+*sudo systemctl disable systemd-resolved*
+
+*sudo systemctl stop systemd-resolved*
+
+Second, delete the existing /etc/resolv.conf file, as it's a symlink to ../run/systemd/resolve/stub-resolv.conf
+
+*sudo rm /etc/resolv.conf*
+
+Create a new /etc/resolv.conf file with this:
+
+*echo "nameserver 8.8.8.8" > /etc/resolv.conf*
+
+Install dnsmasq:
+
+*sudo apt-get install dnsmasq*
+
+After install, the /etc/dnsmasq.conf file should be present.  After any changes, you'll need to restart the service:
+
+*sudo systemctl restart dnsmasq*
+
+If you want to keep both dnsmasq and the systemd-resolved stub-resolver enabled and running, 
+
+there are some ways to do that listed [HERE](https://unix.stackexchange.com/questions/304050/how-to-avoid-conflicts-between-dnsmasq-and-systemd-resolved).
