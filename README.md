@@ -1,5 +1,4 @@
 # Linux Networking Lab
 
-### Router Configuration
+#### [*Router Configuration*](https://github.com/sydasif/linux-lab/blob/master/R1_conf.txt)
 
-[R1]()(R1_conf.txt)
