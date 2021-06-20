@@ -44,6 +44,8 @@ Restart the tftpd-hpa Service
 
 ### [dnsmasq](https://thekelleys.org.uk/dnsmasq/doc.html)
 
+### Setting of DNS
+
 Since Ubuntu 18.04 ships with systemd-resolved by default (and it's bound to port 53), you'll want to perform a few extra steps:
 
 First,  disable and stop systemd-resolved:
@@ -72,37 +74,41 @@ If you want to keep both dnsmasq and the systemd-resolved stub-resolver enabled 
 
 there are some ways to do that listed [HERE](https://unix.stackexchange.com/questions/304050/how-to-avoid-conflicts-between-dnsmasq-and-systemd-resolved).
 
-Go to sudo vi /etc/dnsmasq.conf
+### Configuration
+
+**Go to sudo vi /etc/dnsmasq.conf**
 
 uncommit line below:
 
-domain-needed
+*domain-needed*
 
-bogus-priv
+*bogus-priv*
 
-Add line below:
+**Add line below:**
 
-local=/home.com/
+*local=/home.com/*
 
-Add line below:
+**Add line below:**
 
-address=/r1/10.1.1.1
+*address=/r1/10.1.1.1*
 
-address=/server/10.1.1.200
+*address=/server/10.1.1.200*
 
-address=/ubuntu-1/10.1.1.201
+*address=/ubuntu-1/10.1.1.201*
 
 
 ## DHCP
 
-Go to sudo vi /etc/dnsmasq.conf
+### Configuration
+
+**Go to sudo vi /etc/dnsmasq.conf**
 
 Add line below:
 
-### to set dhcp range
+**to set dhcp range**
 
-dhcp-rnage=10.1.1.150,10.1.1.199,255.255.255.0,24h 
+*dhcp-rnage=10.1.1.150,10.1.1.199,255.255.255.0,24h* 
 
-### to set default gateway
+**to set default gateway**
 
-dhcp-optinon=3,10.1.1.1
+*dhcp-optinon=3,10.1.1.1*
