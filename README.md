@@ -71,3 +71,38 @@ After install, the /etc/dnsmasq.conf file should be present.  After any changes,
 If you want to keep both dnsmasq and the systemd-resolved stub-resolver enabled and running, 
 
 there are some ways to do that listed [HERE](https://unix.stackexchange.com/questions/304050/how-to-avoid-conflicts-between-dnsmasq-and-systemd-resolved).
+
+Go to sudo vi /etc/dnsmasq.conf
+
+uncommit line below:
+
+domain-needed
+
+bogus-priv
+
+Add line below:
+
+local=/home.com/
+
+Add line below:
+
+address=/r1/10.1.1.1
+
+address=/server/10.1.1.200
+
+address=/ubuntu-1/10.1.1.201
+
+
+## DHCP
+
+Go to sudo vi /etc/dnsmasq.conf
+
+Add line below:
+
+### to set dhcp range
+
+dhcp-rnage=10.1.1.150,10.1.1.199,255.255.255.0,24h 
+
+### to set default gateway
+
+dhcp-optinon=3,10.1.1.1
