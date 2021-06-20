@@ -1,6 +1,4 @@
-Go to nano /etc/network/interfaces
-and removed last two # for dhcp
-
+Go to nano /etc/network/interfaces and removed last two '#' for dhcp
 #
 # This is a sample network config uncomment lines to configure the network
 #
