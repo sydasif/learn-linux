@@ -77,21 +77,21 @@ there are some ways to do that listed [HERE](https://unix.stackexchange.com/ques
 
 uncommit line below:
 
-*domain-needed*
+`domain-needed`
 
-*bogus-priv*
-
-**Add line below:**
-
-*local=/home.com/*
+`bogus-priv`
 
 **Add line below:**
 
-*address=/r1/10.1.1.1*
+`local=/home.com/`
 
-*address=/server/10.1.1.200*
+**Add line below:**
 
-*address=/ubuntu-1/10.1.1.201*
+`address=/r1/10.1.1.1`
+
+`address=/server/10.1.1.200`
+
+`address=/ubuntu-1/10.1.1.201`
 
 
 ## DHCP
@@ -104,8 +104,8 @@ Add line below:
 
 **to set dhcp range**
 
-*dhcp-rnage=10.1.1.150,10.1.1.199,255.255.255.0,24h* 
+`dhcp-rnage=10.1.1.150,10.1.1.199,255.255.255.0,24h` 
 
 **to set default gateway**
 
-*dhcp-optinon=3,10.1.1.1*
+`dhcp-optinon=3,10.1.1.1`
