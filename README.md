@@ -73,7 +73,7 @@ there are some ways to do that listed [HERE](https://unix.stackexchange.com/ques
 
 ### Configuration
 
-**Go to sudo vi /etc/dnsmasq.conf**
+**Go to `sudo vi /etc/dnsmasq.conf`**
 
 uncommit line below:
 
@@ -98,7 +98,7 @@ uncommit line below:
 
 ### Configuration
 
-**Go to sudo vi /etc/dnsmasq.conf**
+**Go to `sudo vi /etc/dnsmasq.conf`**
 
 Add line below:
 
