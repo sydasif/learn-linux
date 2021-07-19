@@ -24,6 +24,14 @@ TCP/IP is the most popular networking protocol suite, is often referred to as a 
 
 9. Flow controls process is known as a sliding window, at receiving end receive window, which tells the sender that how much data it's able to receive.
 
+### Internet Protocol (IP)
+
+The IP (Internet Protocol) actually sending and receiving of the packets that TCP wants to send or receive. In each packet, there is a source and destination known as an IP address, each connected node has a network interface with its own unique IP address. IP protocol use IP address to figure out where a packet needs to go. TCP splits up a communication and IP route them to their destination.
+
+### User Datagram Protocol (UDP)
+
+UDP is also a part of TCP/IP suite as well. It’s very similar to TCP, the main difference is that UDP is connection-less. This means that UDP does not verify anything. It sends the packets, but does not guarantee delivery. If a packet isn't received by the target, it will not be resent.
+
 ## TFTP Server
 
 ### Introduction
@@ -98,7 +106,7 @@ there are some ways to do that listed [HERE](https://unix.stackexchange.com/ques
 
 **Go to `sudo vi /etc/dnsmasq.conf`**
 
-uncommit line below:
+un-commit line below:
 
 `domain-needed`
 
