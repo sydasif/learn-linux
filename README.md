@@ -1,11 +1,34 @@
-# Linux Networking Lab
+# Linux Networking Basic
+
+## TCP/IP Protocol
+
+### TCP (Transmission Control Protocol)
+
+TCP/IP is the most popular networking protocol suite, is often referred to as a protocols, actually it's made up from several protocols. TCP and IP protocols, in addition there is also a third, named UDP.
+
+1. TCP is responsible for breaking down network transmission into sequences (Packet and segment) which are sent to the target node and reassembled back into the original message.
+
+2. TCP performs a three-way handshake , when setting up connection.
+
+3. The first packet, SYN (synchronize), is sent to the receiver, that it wants to start a communication.
+
+4. Once packet is received at the receiving end, a SYN/ACK (synchronize/acknowledge) packet is sent back to the sender.
+
+5. Finally, an ACk (acknowledge) packet is sent to the receiver, and connection is established and the nods are able to communicate.
+
+6. TCP has built-in features to deal with error, error correction ensure that a packet was received the same as, that was sent.
+
+7. TCP packets contain a checksum and algorithm to verify it, if verification is fails, the packet is then discarded.
+
+8. The flow controls feature in TCP handles the speed at which data is transferred. A transmission speed as fast as its slowest point in the path between two nodes.
+
+9. Flow controls process is known as a sliding window, at receiving end receive window, which tells the sender that how much data it's able to receive.
 
 ## TFTP Server
 
 ### Introduction
 
-This document will guide the reader on how to setup a TFTP server that will allow clients to both download and upload files.
-This process has been completely tested and verified on 18 Jun, 2021 using Ubuntu 20.04 LTS Server.
+This document will guide the reader on how to setup a TFTP server that will allow clients to both download and upload files. This process has been completely tested and verified on 18 Jun, 2021 using Ubuntu 20.04 LTS Server.
 
 ### Installation
 
