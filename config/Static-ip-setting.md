@@ -2,6 +2,7 @@ Go to sudo vi /etc/netplan/00-installer-config.yaml
 
 (ubuntu server 20.04 LTS)
 
+```terminal
 # This is the network config written by 'subiquity'
 network:
   ethernets:
@@ -19,3 +20,4 @@ network:
     ens34:
       dhcp4: true
   version: 2
+  ```

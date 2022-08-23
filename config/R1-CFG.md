@@ -1,3 +1,4 @@
+```terminal
 conf t
 !
 hostname R1     
@@ -20,3 +21,4 @@ access-list 1 permit any
 !
 !
 end
+```
