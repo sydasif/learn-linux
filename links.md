@@ -7,3 +7,5 @@
 7. [Zypper-cheat-sheet](https://www.ochobitshacenunbyte.com/wp-content/uploads/2018/05/Zypper-cheat-sheet.pdf)
 8. [apt Command Examples for Ubuntu/Debian Linux](https://www.cyberciti.biz/faq/ubuntu-lts-debian-linux-apt-command-examples/)
 9. [Multiple-byte units](https://en.wikipedia.org/wiki/Byte#Multiple-byte_units)
+10. [Bash Operators Examples](https://linuxhint.com/bash_operator_examples/)
+11. [Basic Operators in Shell Scripting](https://www.geeksforgeeks.org/basic-operators-in-shell-scripting/)
