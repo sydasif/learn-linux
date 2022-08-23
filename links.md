@@ -5,3 +5,5 @@
 5. [List of software package management systems](https://en.wikipedia.org/wiki/List_of_software_package_management_systems)
 6. [YUM CMD](https://access.redhat.com/sites/default/files/attachments/rh_yum_cheatsheet_1214_jcs_print-1.pdf)
 7. [Zypper-cheat-sheet](https://www.ochobitshacenunbyte.com/wp-content/uploads/2018/05/Zypper-cheat-sheet.pdf)
+8. [apt Command Examples for Ubuntu/Debian Linux](https://www.cyberciti.biz/faq/ubuntu-lts-debian-linux-apt-command-examples/)
+9. [Multiple-byte units](https://en.wikipedia.org/wiki/Byte#Multiple-byte_units)
