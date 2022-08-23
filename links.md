@@ -1,0 +1,7 @@
+1. [Difference Between Kernel and Shell](https://pediaa.com/difference-between-kernel-and-shell/)
+2. [Terminator](https://github.com/gnome-terminator/terminator)
+3. [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
+4. [Self-contained, pretty and versatile .tmux.conf configuration file.](https://github.com/gpakosz/.tmux)
+5. [List of software package management systems](https://en.wikipedia.org/wiki/List_of_software_package_management_systems)
+6. [YUM CMD](https://access.redhat.com/sites/default/files/attachments/rh_yum_cheatsheet_1214_jcs_print-1.pdf)
+7. [Zypper-cheat-sheet](https://www.ochobitshacenunbyte.com/wp-content/uploads/2018/05/Zypper-cheat-sheet.pdf)
