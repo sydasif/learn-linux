@@ -1,3 +1,5 @@
+# IP Setting
+
 Go to sudo vi /etc/netplan/00-installer-config.yaml
 
 (ubuntu server 20.04 LTS)
